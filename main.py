@@ -59,7 +59,6 @@ def solve_sudoku(board):
     return True  
 
 
-
 def print_board(board):
     """Imprime o tabuleiro do Sudoku."""
     for row in board:
