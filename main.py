@@ -28,7 +28,6 @@ board = [
 ]
 
 def is_valid(board, num, row, col):
-    """Verifica se é válido colocar 'num' na posição (row, col)."""
     if num in board[row]:
         return False
     
@@ -45,7 +44,6 @@ def is_valid(board, num, row, col):
 
 
 def solve_sudoku(board):
-    """Resolve o tabuleiro do Sudoku usando backtracking."""
     for row in range(9):
         for col in range(9):
             if board[row][col] == 0:
@@ -60,7 +58,6 @@ def solve_sudoku(board):
 
 
 def print_board(board):
-    """Imprime o tabuleiro do Sudoku."""
     for row in board:
         print(" ".join(str(num) if num != 0 else '.' for num in row))
 
